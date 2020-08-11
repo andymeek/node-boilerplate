@@ -9,8 +9,8 @@
     "lint:scripts": "eslint './**/*.{ts,tsx}' --color --fix",
     "lint": "npm run lint:scripts",
     "start": "node ./build/index",
-    "test": "jest --watchAll=false --coverage",
-    "test:watch": "jest --coverage --watchAll"
+    "test": "jest --colors --verbose=true --coverage --runInBand --watchAll=false",
+    "test:watch": "npm test -- --watchAll"
   },
   "author": "Andy Meek",
   "license": "ISC",
