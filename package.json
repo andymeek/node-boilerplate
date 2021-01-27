@@ -6,8 +6,8 @@
   "scripts": {
     "build": "tsc",
     "dev": "tsc --watch",
-    "lint:scripts": "eslint './**/*.{ts,tsx}' --color --fix",
-    "lint": "npm run lint:scripts",
+    "lint": "eslint './**/*.{ts,tsx}' --color",
+    "lint:fix": "npm run lint -- --fix",
     "start": "node ./build/index",
     "test": "jest --colors --coverage --verbose=true --runInBand --watchAll=false",
     "test:watch": "npm test -- --watchAll"
